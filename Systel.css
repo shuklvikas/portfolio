@@ -1,0 +1,508 @@
+/* Add this CSS code to styles.css */
+.contact-section {
+    background-color: rgb(0, 0, 37);
+    color: white;
+    padding: 80px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+}
+
+.contact-section a {
+    color: rgb(170, 107, 228);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(18, 18, 65);
+    height: 50px;
+}
+
+nav ul {
+    justify-content: center;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: rgb(113, 113, 235);
+}
+.left{
+    font-size: 1.7rem;
+    font-style:unset;
+}
+body {
+    background-color: rgb(0, 0, 37);
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(18, 18, 65);
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-logo {
+    font-weight: bold;
+    font-size: 24px;
+    order: 1; /* Place vikas shukla on the left */
+}
+
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    order: 2; /* Place links in two columns */
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.contact-form {
+max-width: 500px;
+margin: 0 auto;
+padding: 20px;
+background-color: #f4f4f4;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a.icon {
+    font-size: 1.2rem;
+    color: rgb(136, 7, 7);
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a.icon:hover {
+    color: rgb(113, 113, 235);
+}
+main hr {
+    border:0;
+    background-color: #9687f1;
+    height: 1.2px;
+    margin: 20px 54px;
+
+}
+/* Add this media query to make your page responsive */
+@media screen and (max-width: 768px) {
+    /* Adjust styling for smaller screens here */
+    .firstsection {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .rightsection img {
+        width: 100%; /* Make the image fill the container on smaller screens */
+    }
+    
+    /* Add more responsive styles as needed */
+}
+
+
+.left-about {
+    width: 85%;
+}
+
+.left-about h4 {
+    font-weight: bold;
+}
+.about-container .left-about h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.about-container .right-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.about-item {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container .left-about h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.about-item .small-text {
+    font-size: 1.2rem;
+    color: var(--color-grey-1);
+    letter-spacing: 2px;
+    padding-left: 3rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.main-title{
+    text-align: center;
+    margin: 40px;
+    font-size: 1.5rem;
+
+}
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+}
+.main-title h2 span {
+        color:green;
+}
+.about-container .right-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+.about-container .right-about .about-item {
+    border: 1px solid #352a2a;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.about-container .right-about .about-item:hover {
+    transform: scale(1.1) !important;
+}
+.about-container .right-about .about-item .abt-text {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.about-container .right-about .about-item .abt-text .large-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color:green;
+}
+.about-container .left-about p {
+    padding-left: 0;
+}
+.about-container .left-about p {
+    line-height: 2rem;
+    padding: 1rem;
+    color: #b2becd;
+    text-align: justify;
+}
+.about-container .right-about .about-item .abt-text .small-text {
+    padding-left: 3rem;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #dbe1e8;
+    letter-spacing: 2px;
+}
+.about-container .right-about .about-item .abt-text .small-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 2rem;
+    height: 2px;
+    background-color: var(--color-grey-5);
+}
+
+/* Add this CSS to your existing styles */
+.programming-languages {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.programming-languages .language{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.language {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.language-name {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+}
+
+.thick-line {
+    border: none;
+    height: 3px; /* Adjust the height to control thickness */
+    background-color: #051b41; /* Adjust the color as needed */
+    margin: 10px 0; /* Adjust margin as needed */
+  }
+  
+
+.black-line {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+.green-line {
+    position: absolute;
+    height: 100%;
+    background-color: #4CAF50;
+}
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+ 
+  .services-box {
+    padding: 20px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    border-bottom: 2px solid #1e165e; 
+    box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+  }
+ 
+  .services-box:hover {
+    background-color: #5a041d;
+  }
+ 
+  .services-box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.7rem 0 0.4rem;
+  }
+ 
+  .services-box:hover {
+    color: #fff;
+  }
+ 
+  .services-box .bx {
+    padding-top: 2rem;
+    font-size: 54px;
+    color: #1e165e;
+  }
+ 
+  .services-box:hover .bx {
+    color: #22cf91;
+  }
+ 
+  .services-box a {
+    color: #1e165e;
+    font-size:0.941rem;
+    font-weight: 500;
+  }
+ 
+  .services-box:hover a {
+    color: #8b8a8f;
+  }
+
+
+
+   /* For Mobile */
+ @media (max-width: 991px) {
+    header {
+      padding: 18px 4%;
+    }
+ 
+    section {
+      padding: 50px 4%;
+    }
+  }
+ 
+  @media (max-width: 881px) {
+    :root {
+      --big-font: 2.7rem;
+      --medium-font: 1.4rem;
+    }
+  }
+ 
+  @media (max-width: 768px) {
+    :root {
+      --big-font: 2.4rem;
+      --medium-font: 1.2rem;
+    }
+} 
+#darkmode {
+    position: absolute;
+    top: 1.4rem;
+    right: 2rem;
+  }
+  @media screen and (max-width: 600px) {
+    .pill-container {
+      flex-direction: column; /* Stack the pills vertically on smaller screens */
+      align-items: center; /* Center the pills horizontally */
+    }
+    /* Override the width for all pills to take full width on smaller screens */
+    .common-pill {
+      flex: 0 1 calc(100% - 20px); /* 100% - 20px to account for margins */
+      max-width: none; /* Remove the maximum width on smaller screens */
+      width: 100%;
+  
+    }
+  }
+  @media (max-width: 340px) {
+    :root {
+      --big-font: 1.7rem;
+      --medium-font: 1.1rem;
+    }
+}
+
+#darkmode {
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    gap: 20px;
+  }
+  
+  .services-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0.5rem;
+    border-bottom: 2px solid var(--main-color);
+    box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+  }
+  .services-box h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.7rem 0 0.4rem;
+  }
+  
+  .services-box span {
+    font-size: var(--p-font);
+    font-weight: 400;
+  }
+  
+  .services-box a {
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+  }
+  
+  .services-box a:hover {
+    color: #8b8a8f;
+  }
+  
+  .Project {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+    margin-left: 2%;
+    margin-right:2%;
+    border-color: #f1f3f7;
+    /* background: #e1e2e4; */
+    border-left-width: 20px;
+    /* border-style: solid; */
+    border-top-width: 20px;
+   text-align: center;
+}
+.title{
+  text-align: center;
+  padding: 10px;
+}
+
+.Proj-1, .Proj-2 {
+    width: 45%;
+    padding: 20px;
+    background-color: #2d0241;
+    border-radius: 15px;
+}
+.proj_title {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #06bb06;
+}
+.proj_btn {
+    background: #8941e9;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #8941e9;
+    transition: all 0.3s ease;
+}
+.proj_img_1 {
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px solid black;
+}
+.proj_img_1 {
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px solid black;
+    max-width: 100%;  
+height: 10%;
+width: 300px;  
+}
+.proj_img_2 {
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px solid black;
+}
+.proj_img_2 {
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px solid black;
+    max-width: 100%;  
+height: 50%;
+width: 400px;  
+}
