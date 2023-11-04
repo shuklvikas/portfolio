@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - PortFolio</title>
+    <link rel="stylesheet" href="Systel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+        /* Add CSS styles for the footer and form */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(18, 18, 65);
+            color: #fff;
+            padding: 20px;
+        }
+
+        .footer-logo {
+            font-weight: bold;
+            font-size: 24px;
+            order: 1; /* Place vikas shukla on the left */
+        }
+
+        .footer-links {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            order: 2; /* Place links in two columns */
+        }
+
+        .footer-links li {
+            margin-right: 20px;
+        }
+        
+        .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+        .social-icons {
+            order: 3; /* Place social icons on the right */
+        }
+
+        /* Add any other CSS styles as needed */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">vikas PortFolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/portfolio.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/service.html">Services</a></li>
+                    <li><a href="/project.html">Projects</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                    <div class="bx bx-moon" id="darkmode"></div>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h1>Contact Me</h1>
+            <p>If you would like to get in touch with me, feel free to send me an email at: <a href="mailto:your.email@example.com">shuklavikas2807@gmail.com</a></p>  
+            <br>
+            <p>OR</p>
+            <br>
+            <!-- Add a contact form -->
+            <div class="contact-form">
+                <form action="your-backend-script.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" name="name" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <input type="number" id="age" placeholder="Age" name="age" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <input type="text" id="country" placeholder=" From which Country you are?" name="country" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <input type="text" id="contact" placeholder="Email or Phone no." name="contact" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <textarea id="comment" placeholder="Comment or Feedback" name="comment" rows="4" required></textarea>
+                    </div>
+            
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            
+        </section>
+<hr>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">vikas shukla</div>
+            <ul class="footer-links">
+                <li><a href="/portfolio.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/service.html">Services</a></li>
+                <li><a href="/project.html">Projects</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fab fa-twitter"></i><img src="insta.jpg" alt="instragram" height="20" width="20"></a>
+                <a href="#" class="icon"><i class="fab fa-facebook-f"></i><img src="youtube.png" alt="youtube" height="20" width="20"></a>
+                <a href="#" class="icon"><i class="fab fa-linkedin-in"></i><img src="linked.png" alt="linkedin" height="20" width="20"></a>
+                <!-- Add more social media icons as needed -->
+            </div>
+        </div>
+        <div class="footer-text">
+            &copy; 2023 Your Name. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
